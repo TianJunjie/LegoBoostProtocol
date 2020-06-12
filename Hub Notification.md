@@ -1,6 +1,6 @@
 # Hub Notification
 
-enablle Notification cmd eg
+enable Notification cmd eg
 
 ```
 DEBUG:comms-pygatt:Writing to handle 14: b'0a00413b000000000001'
