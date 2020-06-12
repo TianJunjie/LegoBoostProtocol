@@ -6,7 +6,15 @@ DEBUG:comms-pygatt:Writing to handle 14: b'0a00413a020100000001'
 DEBUG:comms-pygatt:Writing to handle 14: b'0a00413a040100000001'
 
 ```
-
+| Bytes | Info                                                         |
+| ----- | ------------------------------------------------------------ |
+| 0a    | Common Message Header - length                               |
+| 00    | Common Message Header - HUB_ID (always 00)                   |
+| 41    | Common Message Header - Message Type ; 41-> Format of Port Input Format Setup (Single) |
+| 3a    | Port ID 3a ->  TiltSensor                                        |
+| 02    | mode                        |
+| 0100000    | The changes in the delta value to trigger a value update. If set to 0 (zero) data will be send as fast as possible (live data) should NOT be use due to the limited Bluetooth LE bandwidth.                |
+| 01 | 0 = Disabled  1 = Enabled                                          |
 
 
 notification eg
@@ -15,9 +23,26 @@ DEBUG:hub:Notification on 14: b'0500453a00'
 
 ```
 
+| Bytes | Info                                                         |
+| ----- | ------------------------------------------------------------ |
+| 05    | Common Message Header - length                               |
+| 00    | Common Message Header - HUB_ID (always 00)                   |
+| 45    | Common Message Header - Message Type ; 45-> Port Value (Single) |
+| 3a    | Port ID 3a ->  TiltSensor                                          |
+| 00   | index tilt                       |
 
 
 
 ```
 DEBUG:hub:Notification on 14: b'0700453afcd338'
 ```
+
+| Bytes | Info                                                         |
+| ----- | ------------------------------------------------------------ |
+| 07    | Common Message Header - length                               |
+| 00    | Common Message Header - HUB_ID (always 00)                   |
+| 45    | Common Message Header - Message Type ; 45-> Port Value (Single) |
+| 3a    | Port ID 3a ->  TiltSensor                                          |
+| fc   | roll                      |
+| d3   | pitch                      |
+| 38   | yaw                      |

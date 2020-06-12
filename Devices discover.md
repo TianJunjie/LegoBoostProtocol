@@ -7,7 +7,10 @@ char-write-req 0x0f 0100
 DEBUG:comms-pygatt:Writing to handle 15: b'0100'
 ```
 
-
+devices
+```
+DEBUG:hub:All devices are present: (EncodedMotor on port 0x0, EncodedMotor on port 0x1, EncodedMotor on port 0x10 (ports 0x0 and 0x1 combined), LEDRGB on port 0x32, TiltSensor on port 0x3a, Current on port 0x3b, Voltage on port 0x3c)
+```
 
 recived msg. eg
 
