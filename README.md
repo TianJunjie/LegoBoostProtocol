@@ -8,16 +8,12 @@ This is for tracking Lego Boost BLE protocol analysis.
 - [Motor Control](https://github.com/TianJunjie/LegoBoostProtocol/blob/master/Motor%20control.md) move motor
 - [LED](https://github.com/TianJunjie/LegoBoostProtocol/blob/master/LED%20color.md)
 - [Voltage](https://github.com/TianJunjie/LegoBoostProtocol/blob/master/Voltage.md)
+- [Motor sensor](https://github.com/TianJunjie/LegoBoostProtocol/blob/master/Motor%20sensor.md)
+- [Tilt sensor](https://github.com/TianJunjie/LegoBoostProtocol/blob/master/Tilt%20sensor.mkd)
+- [Color sensor](https://github.com/TianJunjie/LegoBoostProtocol/blob/master/color%20distance%20sensor.md)
 
 
 
-
-
-Todo:
-- Motor sencor
-- Tilt
-- Color
-- Button
 
 links:
 - [pylgbst](https://github.com/undera/pylgbst)
